@@ -30,17 +30,12 @@ namespace фрукти
                     case 0: 
                         this.animalsList.Add(Cows.Generate());
                         break;
-                    case 1: 
-                        this.animalsList.Add(new Dogs
-                        {
-                            LengthOfTail = rnd.Next() % 101
-                        });
+                    case 1:
+                        this.animalsList.Add(Dogs.Generate());
                         break;
-                    case 2: 
-                        this.animalsList.Add(new Cats
-                        {
-                            CatchOfMice = rnd.Next() % 101
-                        });
+                    case 2:
+                        this.animalsList.Add(Cats.Generate());
+                        
                         break;
                        
                 }
